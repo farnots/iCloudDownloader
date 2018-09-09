@@ -29,6 +29,8 @@
 		A0CF17882144B66500D1DDCC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A0CF178F2144B6D000D1DDCC /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 		A0CF17932144B8E400D1DDCC /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		A0CF17952144CBF100D1DDCC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A0CF17962144DBD000D1DDCC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,8 @@
 		A0CF177C2144B66400D1DDCC = {
 			isa = PBXGroup;
 			children = (
+				A0CF17952144CBF100D1DDCC /* README.md */,
+				A0CF17962144DBD000D1DDCC /* LICENSE */,
 				A0CF17872144B66500D1DDCC /* iCloudDownlader */,
 				A0CF17862144B66500D1DDCC /* Products */,
 			);

@@ -7,6 +7,18 @@
 //
 
 import Foundation
+let downloader = Downloader()
+let consoleIO = ConsoleIO()
 
-print("Hello, World!")
+if CommandLine.argc < 2 {
+    consoleIO.writeMessage("No file given", to: .error)
+} else {
+    if CommandLine.arguments[1] == "-A" {
+        downloader.downloadFolder()
+    }
+    else {
+        downloader.downloadFile()
+    }
+    
+}
 

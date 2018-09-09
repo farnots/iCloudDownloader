@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A0CF17892144B66500D1DDCC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF17882144B66500D1DDCC /* main.swift */; };
+		A0CF17902144B6D000D1DDCC /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF178F2144B6D000D1DDCC /* ConsoleIO.swift */; };
+		A0CF17942144B8E400D1DDCC /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF17932144B8E400D1DDCC /* Downloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		A0CF17852144B66500D1DDCC /* iCloudDownlader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iCloudDownlader; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CF17882144B66500D1DDCC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A0CF178F2144B6D000D1DDCC /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
+		A0CF17932144B8E400D1DDCC /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,9 @@
 		A0CF17872144B66500D1DDCC /* iCloudDownlader */ = {
 			isa = PBXGroup;
 			children = (
+				A0CF178F2144B6D000D1DDCC /* ConsoleIO.swift */,
 				A0CF17882144B66500D1DDCC /* main.swift */,
+				A0CF17932144B8E400D1DDCC /* Downloader.swift */,
 			);
 			path = iCloudDownlader;
 			sourceTree = "<group>";
@@ -120,6 +126,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0CF17892144B66500D1DDCC /* main.swift in Sources */,
+				A0CF17902144B6D000D1DDCC /* ConsoleIO.swift in Sources */,
+				A0CF17942144B8E400D1DDCC /* Downloader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +166,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -218,7 +226,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;

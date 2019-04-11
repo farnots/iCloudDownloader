@@ -28,29 +28,27 @@ class Downloader {
         }
     }
     
-    func downloadFile() {
-        let file = CommandLine.arguments[1]
-        let fileUrl = NSURL.fileURL(withPath: file)
+    func downloadFile(at path: String) {
+        let fileUrl = NSURL.fileURL(withPath: path)
         fetchFile(fileUrl: fileUrl)
         
-        }
+    }
     
-        func downloadFolder() {
-            do {
-                let items = try fm.contentsOfDirectory(atPath: path)
-                
-                for item in items {
-                    let itemUrl = NSURL.fileURL(withPath: item)
-                    fetchFile(fileUrl: itemUrl)
-                }
-            } catch {
-                consoleIO.writeMessage("Can't acces the folder", to: .error)
-            }
-
+    func downloadFolder() {
+        do {
+            let items = try fm.contentsOfDirectory(atPath: path)
             
+            for path in items {
+                downloadFile(at: path)
+            }
+        } catch {
+            consoleIO.writeMessage("Can't acces the folder", to: .error)
         }
-
-
-   
-
+        
+        
+    }
+    
+    
+    
+    
 }

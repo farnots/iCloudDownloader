@@ -10,15 +10,25 @@ import Foundation
 let downloader = Downloader()
 let consoleIO = ConsoleIO()
 
+
 if CommandLine.argc < 2 {
     consoleIO.writeMessage("No file given", to: .error)
 } else {
-    if CommandLine.arguments[1] == "-A" {
-        downloader.downloadFolder()
-    }
-    else {
-        downloader.downloadFile()
+    for parameter in consoleIO.getListOfArgument(CommandLine.arguments) {
+        switch parameter {
+        case .help:
+            consoleIO.displayHelp()
+            exit(0)
+        case .all:
+            downloader.downloadFolder()
+            break
+        case .delete:
+            break
+        }
     }
     
+    for path in consoleIO.getListOfPath(CommandLine.arguments) {
+        downloader.downloadFile(at: path)
+    }
 }
 

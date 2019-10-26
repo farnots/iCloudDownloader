@@ -19,7 +19,6 @@ Downloading a file stored on iCloud from the Finder is easy, one click and you a
 * Download all current folder : `icd -A`
 * Download all folder with subfolder : `find . -type d -exec icd -A \;`
 
-
 ## Compatiblity
 
 iCloudDownloader should work on macOS 10.2 Sierra, and on OS X 10.11 El Capitan.
